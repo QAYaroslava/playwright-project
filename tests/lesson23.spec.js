@@ -10,7 +10,7 @@ test.describe('Registration Tests', () => {
   testEmail = generateEmail('aqa');
 
   test.beforeEach(async ({ page }) => {
-    await page.goto('https://guest:welcome2qauto@qauto.forstudy.space/');
+    await page.goto('/');
     await page.waitForSelector('button:has-text("Sign up")');
     await expect(page).toHaveURL('https://qauto.forstudy.space/');
   });
